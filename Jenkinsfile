@@ -7,6 +7,7 @@ label 'server-1'
 }
 
 tools{
+    jdk 'Java 21'
     maven 'Maven'
 }
 

@@ -2,7 +2,7 @@ pipeline{
 
 agent{
 
-label 'server-'
+label 'server-1'
 
 }
 

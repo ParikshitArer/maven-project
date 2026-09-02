@@ -41,6 +41,9 @@ parallel{
 
         steps{
             echo 'This is test A'
+         
+         sh 'mvn test'
+
         }
     }
 
@@ -48,6 +51,8 @@ parallel{
 
         steps{
             echo 'This is test B'
+
+            sh 'mvn test'
         }
     }
 }

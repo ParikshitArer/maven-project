@@ -33,7 +33,7 @@ stage('Build'){
 
 stage('Test'){
 
-steps{
+
 
 parallel{
 
@@ -68,4 +68,4 @@ parallel{
 
 
 
-}
+

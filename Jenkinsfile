@@ -23,12 +23,13 @@ stages
 
 stage('Build'){
     steps{
+
         sh 'mvn clean package'
 
         echo "Hello my name is $NAME "
     }
 
-  
+}
 
 stage('Test'){
 

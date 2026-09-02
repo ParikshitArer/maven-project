@@ -53,7 +53,7 @@ parallel{
 }
   post{
         success {
-            archiveArtifacts artifacts: '**/target/*.wara'
+            archiveArtifacts artifacts: '**/target/*.war'
         }
     }
 }

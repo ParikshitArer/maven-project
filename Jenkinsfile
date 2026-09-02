@@ -38,7 +38,7 @@ stage('Test'){
 parallel{
 
     stage('TestA'){
-        agent { label 'server-1'}
+        agent { label 'server-2'}
 
         steps{
             echo 'This is test A'

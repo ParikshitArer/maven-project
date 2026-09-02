@@ -6,6 +6,12 @@ label 'server-1'
 
 }
 
+environment{
+
+NAME = "Parikshit"
+
+}
+
 tools{
     maven 'Maven'
 
@@ -18,6 +24,8 @@ stages
 stage('Build'){
     steps{
         sh 'mvn clean package'
+
+        echo "Hello my name is $NAME "
     }
 
     post{

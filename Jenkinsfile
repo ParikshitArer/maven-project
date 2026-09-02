@@ -28,14 +28,36 @@ stage('Build'){
         echo "Hello my name is $NAME "
     }
 
-    post{
+  
+
+stage('Test'){
+
+steps{
+
+parallel{
+
+    stage('TestA'){
+
+        steps{
+            echo 'This is test A'
+        }
+    }
+
+    stage('TestB'){
+
+        steps{
+            echo 'This is test B'
+        }
+    }
+}
+  post{
         success{
             archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
         }
     }
+}
 
-
-
+}
 
 
 

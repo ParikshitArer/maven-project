@@ -51,8 +51,8 @@ parallel{
     }
 }
   post{
-        success{
-            archiveArtifacts artifacts: '**/target/*.war', fingerprint: true
+        success {
+            archiveArtifacts artifacts: '**/target/*.war'
         }
     }
 }
